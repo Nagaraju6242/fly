@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-body {
+  background-color: orangered;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.up {
+  animation: moveUp 4s linear;
+}
+
+.down {
+  animation: moveDown 4s linear;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -1000%);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 1000%);
+  }
+}
